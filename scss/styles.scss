@@ -5,19 +5,24 @@ $headerFont: Helvetica, sans-serif;
 @import "type";
 @import "layout";
 
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
 img {width:100%;}
 
-h1 {color:$textColor; font-family: $headerFont;}
+h1 {color:$textColor;}
 h2 {color:$textColor; font-family: $headerFont;}
 ul {color:$textColor; text-decoration: underline;}
 
 nav {
-    background-color:#FF0000;
-    ul {list-style: none;font-size: 2em;}
+    margin-top: 10px;
+    margin-bottom: 10px;
+    ul {list-style: none;}
 }
 
-article {background-color: blue;
+article {background-color: #cccccc;
+		padding: 10px;
 
-    ul {list-style: disc;font-size: 3em;}
+    ul {list-style: disc;}
 
 }
